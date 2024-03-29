@@ -5,7 +5,7 @@
 
 int main()
 {
-    double a = -2;
+    double a = -0.6;
     double b = 3.5;
     double a1 = 7.4;
     double b1 = -16.998;
@@ -16,7 +16,7 @@ int main()
     ComplexNumber z2 = ComplexNumber(a2, b2);
 
     //stapiamo il numero che otteniamo
-    cout << setprecision(16) << z << endl;
+    cout << z << endl;
     //sommiamo a questo numero un secondo numero complesso
     cout << "Somma: " << z + z1 << endl;
 
@@ -30,7 +30,7 @@ int main()
     else {std::cout << "z= " << z <<"  e z1=" << z1 << " sono due numeri complessi distinti." << endl;}
     //confrontiamo z con z2
     if (z==z2){
-        std::cout << "z= " << z <<"  e z2=" << z2 << " sono lo stesso numero complesso a meno di una tolleranza." << endl;
+        std::cout << "z= " << setprecision(16) <<z <<"  e z2=" << z2 << " sono lo stesso numero complesso a meno di una tolleranza." << endl;
     }
     else {std::cout << "z= " << z <<"  e z2=" << z2 << " sono due numeri complessi distinti." << endl;}
 
