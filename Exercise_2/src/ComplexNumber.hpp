@@ -1,7 +1,6 @@
 #ifndef LIBRARY__ComplexNumber_H
 #define LIBRARY__ComplexNumber_H
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 //iniziamo creando il nuovo tipo
@@ -19,7 +18,7 @@ struct ComplexNumber{
 
     //creo un modulo che restituisca il coniugato di un numero complesso
     ComplexNumber coniugato(){
-        double real =parte_reale;
+        double real = parte_reale;
         double imm = -parte_immaginaria;
         return ComplexNumber(real, imm);
     }

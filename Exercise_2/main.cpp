@@ -1,3 +1,4 @@
+#include <cmath>
 #include <iomanip>
 #include <iostream>
 #include "ComplexNumber.hpp"
@@ -5,8 +6,8 @@
 
 int main()
 {
-    double a = -0.6;
-    double b = 3.5;
+    double a = 0.6;
+    double b = -3.5;
     double a1 = 7.4;
     double b1 = -16.998;
     double a2 = a - pow(10, -15);
@@ -16,12 +17,12 @@ int main()
     ComplexNumber z2 = ComplexNumber(a2, b2);
 
     //stapiamo il numero che otteniamo
-    cout << z << endl;
+    cout << "Stampiamo il numero compless z: " << z << endl;
     //sommiamo a questo numero un secondo numero complesso
-    cout << "Somma: " << z + z1 << endl;
+    cout << "Somma: " << z << " + " << z1 << " = "<< z + z1 << endl;
 
     //calcoliamo il coniugato di un numero complesso
-    cout << "Il coniugato di z: " << z.coniugato() << endl;
+    cout << "Il coniugato di z = " << z << " risulta essere " << z.coniugato() << endl;
 
     //confrontiamo z con z1
     if (z==z1){
